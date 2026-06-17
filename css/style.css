@@ -34,27 +34,33 @@ body{
 .navbar{
     position:sticky;
     top:0;
-
+    
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    padding:20px 8%;
+    width:100%;
+
+    padding:24px 8%;
 
     background:rgba(15,15,15,0.95);
 
-    backdrop-filter:blur(10px);
-
-    z-index:1000;
+    backdrop-filter:blur(12px);
 
     border-bottom:1px solid rgba(212,175,55,0.15);
-}
 
+    z-index:1000;
+}
 .logo{
-    font-size:1.1rem;
-    font-weight:600;
-    letter-spacing:3px;
     color:var(--gold);
+
+    font-size:1.3rem;
+
+    font-weight:600;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
 }
 
 .nav-menu{
@@ -63,13 +69,53 @@ body{
 }
 
 .nav-menu a{
-    text-decoration:none;
     color:var(--white);
+
+    text-decoration:none;
+
     font-size:0.95rem;
+
+    letter-spacing:1px;
+
+    transition:0.3s ease;
+}
+.nav-menu a{
+    color:var(--white);
+
+    text-decoration:none;
+
+    font-size:0.95rem;
+
+    letter-spacing:1px;
+
+    transition:0.3s ease;
+
+    position:relative;
+}
+
+.nav-menu a::after{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0;
+    height:1px;
+
+    background:var(--gold);
 
     transition:0.3s;
 }
 
+.nav-menu a:hover{
+    color:var(--gold);
+}
+
+.nav-menu a:hover::after{
+    width:100%;
+}
 .nav-menu a:hover{
     color:var(--gold);
 }
