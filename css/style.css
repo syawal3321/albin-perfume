@@ -166,9 +166,72 @@ body{
 
 }
 .hero{
-    min-height:90vh;
+    .hero-content{
+    max-width:700px;
+}
+
+.hero-tag{
+    color:var(--gold);
+    letter-spacing:3px;
+    font-size:0.9rem;
+    text-transform:uppercase;
+}
+
+.hero h1{
+    font-size:3rem;
+    line-height:1.1;
+    margin:20px 0;
+    font-weight:600;
+}
+
+.hero p{
+    color:#b8b8b8;
+    line-height:1.8;
+    margin-bottom:30px;
+    font-size:1rem;
+}
+
+.hero-buttons{
     display:flex;
-    align-items:center;
     justify-content:center;
-    text-align:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:#000;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+    border:1px solid var(--gold);
+    color:var(--gold);
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:50px;
+    transition:0.3s;
+}
+
+.btn-secondary:hover{
+    background:rgba(212,175,55,0.1);
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .hero{
+        padding:0 24px;
+    }
 }
