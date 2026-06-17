@@ -9,3 +9,80 @@ background:#0F0F0F;
 color:white;
 font-family:Arial,sans-serif;
 }
+:root{
+    --black:#0F0F0F;
+    --gold:#D4AF37;
+    --white:#FFFFFF;
+}
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--black);
+    color:var(--white);
+    font-family:system-ui,sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:sticky;
+    top:0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(15,15,15,0.95);
+
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+
+    border-bottom:1px solid rgba(212,175,55,0.15);
+}
+
+.logo{
+    font-size:1.1rem;
+    font-weight:600;
+    letter-spacing:3px;
+    color:var(--gold);
+}
+
+.nav-menu{
+    display:flex;
+    gap:32px;
+}
+
+.nav-menu a{
+    text-decoration:none;
+    color:var(--white);
+    font-size:0.95rem;
+
+    transition:0.3s;
+}
+
+.nav-menu a:hover{
+    color:var(--gold);
+}
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+}
+
+.hamburger span{
+    width:25px;
+    height:2px;
+    background:white;
+}
