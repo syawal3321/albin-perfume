@@ -593,3 +593,30 @@ body{
     border-color:var(--gold);
     color:var(--gold);
 }
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .product-card img{
+        height:180px;
+    }
+
+    .product-card h3{
+        font-size:1rem;
+    }
+
+    .product-card p{
+        font-size:.9rem;
+    }
+
+    .product-card a{
+        font-size:.85rem;
+    }
+
+}
