@@ -106,6 +106,13 @@ body{
 .nav-menu a:hover{
     color:var(--gold);
 }
+.nav-menu a.active{
+    color:var(--gold);
+}
+
+.nav-menu a.active::after{
+    width:100%;
+}
 
 .nav-menu a:hover::after{
     width:100%;
