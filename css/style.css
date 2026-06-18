@@ -35,6 +35,8 @@ body{
 /* NAVBAR */
 
 .navbar{
+    background:rgba(10,10,10,0.9);
+    
     position:sticky;
     top:0;
     
@@ -271,6 +273,8 @@ body{
 }
 
 .product-card{
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.35);
     background:#141414;
 
     border:1px solid rgba(212,175,55,0.1);
