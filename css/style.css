@@ -499,3 +499,44 @@ body{
     color:#777;
     font-size:.9rem;
 }
+/* SHOP PAGE */
+
+.shop-hero{
+    padding:150px 8% 80px;
+    text-align:center;
+}
+
+.shop-hero h1{
+    font-size:3rem;
+    margin:20px 0;
+}
+
+.shop-hero p{
+    color:#b8b8b8;
+}
+
+.shop-products{
+    padding:0 8% 100px;
+}
+
+.shop-filter{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:50px;
+    flex-wrap:wrap;
+}
+
+.shop-filter button{
+    background:#141414;
+    border:1px solid rgba(212,175,55,0.2);
+    color:white;
+    padding:12px 24px;
+    border-radius:50px;
+    cursor:pointer;
+}
+
+.shop-filter button:hover{
+    border-color:var(--gold);
+    color:var(--gold);
+}
