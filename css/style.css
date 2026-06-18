@@ -280,6 +280,7 @@ body{
 }
 
 .product-card{
+    position:relative;
     box-shadow:
     0 10px 30px rgba(0,0,0,0.35);
     background:#141414;
@@ -291,7 +292,27 @@ body{
     overflow:hidden;
 
     transition:0.4s ease;
+    
 }
+.badge{
+    position:absolute;
+
+    top:15px;
+    left:15px;
+
+    background:var(--gold);
+
+    color:black;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    font-size:.75rem;
+
+    font-weight:600;
+}
+
 
 .product-card:hover{
     transform:translateY(-10px);
