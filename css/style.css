@@ -506,6 +506,31 @@ body{
     color:#777;
     font-size:.9rem;
 }
+
+/* SOCIAL LINKS */
+
+.social-links{
+    margin-top:20px;
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.social-links a{
+    color:#b8b8b8;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+}
+
+.social-links a:hover{
+    color:var(--gold);
+}
+
 /* SHOP PAGE */
 
 .shop-hero{
