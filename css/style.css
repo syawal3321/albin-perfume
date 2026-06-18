@@ -402,3 +402,23 @@ body{
 
     margin-bottom:30px;
 }
+.hero{
+    min-height:70vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    padding:0 8%;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.85)
+    ),
+    url("../images/perfume-hero.jpeg");
+
+    background-size:cover;
+    background-position:center;
+}
